@@ -1,5 +1,3 @@
-# Crime Scene Reporting Simulation
-
 ## Overview
 This immersive training experience simulates realistic crime scenes for educational use on Meta Quest 3 headsets. Developed in the University of Missouri–Kansas City’s Augmented and Virtual Reality (AVR) Showroom and Computer Lab, this project teaches aspiring journalists how to observe, document, and report from chaotic and sensitive environments like crime scenes.
 
