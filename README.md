@@ -3,7 +3,6 @@ This immersive training experience simulates realistic crime scenes for educatio
 
 ## Goals
 - Provide students with hands-on, immersive practice
-- Teach crime scene documentation in an immersive experience
 - Develop intuitive VR interaction systems
 - Provide students with real-world XR development experience
 
