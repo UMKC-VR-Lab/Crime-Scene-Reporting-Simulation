@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 3a6db933fef1d4c759bf21220420505f, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 1791977793}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 2f42b30ad04fba042a3d6483e57e307f, type: 2}
   m_LightingSettings: {fileID: 795037739}
 --- !u!196 &4
 NavMeshSettings:
@@ -329,6 +329,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Template
       objectReference: {fileID: 0}
+    - target: {fileID: 2656947464387458650, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3016790861071833725, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3163009791593933636, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -391,6 +399,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3251228492020139018, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883898410705446676, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314904937618247999, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403210907813116875, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5164920449729263157, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
@@ -533,6 +553,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6697487971052540862, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6962213485544490967, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7024227352556874161, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7059051552609997236, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -625,6 +657,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7713189603744177398, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: far clip plane
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8043707736140579378, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -671,12 +707,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8359454326703727975, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8386996649155391182, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5731241073041567562, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7713189603744177392, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1582148454}
   m_SourcePrefab: {fileID: 100100000, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
 --- !u!4 &180779120 stripped
 Transform:
@@ -900,7 +944,7 @@ PrefabInstance:
     - target: {fileID: 306423734865422085, guid: beb4e2871579447497fe41dfb108e2cd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 830d28b607e09a2479e2005c2eb5c75e, type: 2}
+      objectReference: {fileID: 2100000, guid: bbb56ac3cf3c61a46ab3887c0fdbda8f, type: 2}
     - target: {fileID: 4266640295717640279, guid: beb4e2871579447497fe41dfb108e2cd, type: 3}
       propertyPath: m_Name
       value: Teleport Area (1)
@@ -1198,7 +1242,7 @@ LightingSettings:
   m_BounceScale: 1
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 1
-  m_UsingShadowmask: 1
+  m_UsingShadowmask: 0
   m_BakeBackend: 1
   m_LightmapMaxSize: 1024
   m_LightmapSizeFixed: 0
@@ -1211,7 +1255,7 @@ LightingSettings:
   m_CompAOExponent: 1
   m_CompAOExponentDirect: 0
   m_ExtractAO: 0
-  m_MixedBakeMode: 2
+  m_MixedBakeMode: 1
   m_LightmapsBakeMode: 1
   m_FilterMode: 1
   m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
@@ -1228,8 +1272,8 @@ LightingSettings:
   m_PVREnvironmentSampleCount: 256
   m_PVREnvironmentReferencePointCount: 2048
   m_LightProbeSampleCountMultiplier: 4
-  m_PVRBounces: 2
-  m_PVRMinBounces: 2
+  m_PVRBounces: 1
+  m_PVRMinBounces: 1
   m_PVREnvironmentImportanceSampling: 1
   m_PVRFilteringMode: 1
   m_PVRDenoiserTypeDirect: 1
@@ -1660,6 +1704,55 @@ Transform:
   - {fileID: 547963074}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1582148449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7713189603744177392, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+  m_PrefabInstance: {fileID: 163895861}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1582148454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582148449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!4 &1657649911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5144325884669058111, guid: 626baeb4b5af299428dd2bf99ce68d7a, type: 3}
@@ -2058,7 +2151,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 842f1b88643f1bb458ba6243088e344e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

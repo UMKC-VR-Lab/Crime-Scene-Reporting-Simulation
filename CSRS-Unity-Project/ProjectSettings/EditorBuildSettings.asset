@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/XR Interaction Toolkit/3.0.8/Starter Assets/DemoScene.unity
-    guid: 319dafa5c80f29f428dc1e0d03f04177
+    path: Assets/Modules/Crime Scene Forensics/Sample Scene/Sample Scene.unity
+    guid: 4393ec956c391c94ea39120d0634ca19
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 1f4dc4a0560ae71488019200cb671880, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
