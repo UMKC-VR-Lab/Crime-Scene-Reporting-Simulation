@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1080fd4b1079bdd4499b884cbab5a079
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189382
+  packageName: Forensic Crime Scene Pack
+  packageVersion: 1.0
+  assetPath: Assets/Crime Scene Forensics/Sample Scene/Prefabs/evidence_bags_01_open.prefab
+  uploadId: 417741

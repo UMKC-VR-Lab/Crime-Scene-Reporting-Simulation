@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 659dcb2931ef0d048816741ecb3c5e0a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189382
+  packageName: Forensic Crime Scene Pack
+  packageVersion: 1.0
+  assetPath: Assets/Crime Scene Forensics/Sample Scene/Prefabs/fingerprint_card_filled_01.prefab
+  uploadId: 417741

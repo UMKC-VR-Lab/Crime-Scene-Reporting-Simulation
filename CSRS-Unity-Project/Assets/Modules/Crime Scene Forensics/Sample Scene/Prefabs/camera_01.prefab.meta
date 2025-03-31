@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ee1183319ecbb3d45a6a544579596a0d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189382
+  packageName: Forensic Crime Scene Pack
+  packageVersion: 1.0
+  assetPath: Assets/Crime Scene Forensics/Sample Scene/Prefabs/camera_01.prefab
+  uploadId: 417741

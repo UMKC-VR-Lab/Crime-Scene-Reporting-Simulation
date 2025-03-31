@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 98010b50a5113e54bbfb2fb4d652968a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189382
+  packageName: Forensic Crime Scene Pack
+  packageVersion: 1.0
+  assetPath: Assets/Crime Scene Forensics/Models/Materials/flashlight_01_emission.mat
+  uploadId: 417741
