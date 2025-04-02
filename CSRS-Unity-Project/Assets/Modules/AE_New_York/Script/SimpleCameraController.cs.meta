@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5b4b832018302684dab661d3ee26bc14
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 183319
+  packageName: Street New York
+  packageVersion: 1.5
+  assetPath: Assets/AE_New_York/Script/SimpleCameraController.cs
+  uploadId: 477968

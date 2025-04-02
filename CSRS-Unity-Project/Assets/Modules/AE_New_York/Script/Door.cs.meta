@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a7ebcf928a5083f43bed2e817b97c1e9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 183319
+  packageName: Street New York
+  packageVersion: 1.5
+  assetPath: Assets/AE_New_York/Script/Door.cs
+  uploadId: 477968
