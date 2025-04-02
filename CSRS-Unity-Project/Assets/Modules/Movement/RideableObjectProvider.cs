@@ -16,6 +16,7 @@ public class RideableObjectProvider : MonoBehaviour
     private Vector3 lastPosition;
     private Quaternion lastRotation;
 
+    public bool debug = false;
     private bool playerInside = false;
 
     void Start()
@@ -46,7 +47,7 @@ public class RideableObjectProvider : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject);
+        if(debug) Debug.Log(other.gameObject);
         if (other.CompareTag("Player"))
         {
             playerInside = true;
