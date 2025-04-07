@@ -24627,6 +24627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Aspen (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7905405128809743699, guid: a994ba8c97ac878489424914d4a6e774, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1dd9d5bc1367b924593481ddbd7ea9f4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
