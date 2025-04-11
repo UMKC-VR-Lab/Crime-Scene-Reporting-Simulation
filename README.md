@@ -25,7 +25,7 @@ This immersive training experience simulates realistic crime scenes for educatio
 
 ### Update 1 — Pre-Planning Phase (March 31, 2025)
 UMKC's Department of Communication and Journalism was interested in hiring students to build an immersive experience for journalism students to practice reporting.
-In planning meetings, Joshua Jackson and Sailor Usher laid out the scope of the porject, goals, and set an adaptable time-line. 
+In planning meetings, Joshua Jackson and Sailor Usher laid out the scope of the project, goals, and set an adaptable time-line. 
 Here are the core goals:
 - teleportation movement
 - ability to pick up objects
