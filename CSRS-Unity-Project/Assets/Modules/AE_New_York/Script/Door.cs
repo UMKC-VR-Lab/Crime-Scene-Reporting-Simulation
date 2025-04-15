@@ -28,9 +28,9 @@ public class Door : MonoBehaviour
         {
             transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, defaulRot, Time.deltaTime * smooth);
         }
-        if (Input.GetKeyDown(KeyCode.E) && trig)
+        //if (Input.GetKeyDown(KeyCode.E) && trig)
         {
-            open = !open;
+            //open = !open;
         }
         if (trig)
         {
