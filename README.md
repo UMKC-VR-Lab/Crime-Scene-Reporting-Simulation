@@ -1,7 +1,7 @@
 # Crime Scene Reporting Simulation
 <p float="left">
-  <img src="https://github.com/user-attachments/assets/a9899609-ce44-436b-9700-d1dadd4c705f" width="45%" />
-  <img src="https://github.com/user-attachments/assets/a1bd941a-a0b7-4b92-a674-eeb91a9c1cfe" width="45%" />
+  <img src="https://github.com/user-attachments/assets/a9899609-ce44-436b-9700-d1dadd4c705f" height="250px" />
+  <img src="https://github.com/user-attachments/assets/a1bd941a-a0b7-4b92-a674-eeb91a9c1cfe" height="250px" />
 </p>
 
 ## Overview
