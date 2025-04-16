@@ -43,3 +43,9 @@ Here are the stretch goals:
   - Scene reactivity based on observation and interaction.
 
 Next: Planning and kickoff with Robert-Abel and Vincent.
+
+### Update 2 — MVP Achieved (April 16, 2025)
+Robert and Vincent are now fully up and running on the project. We've completed our minimum viable product (MVP), which includes:
+- A working teleprompter that displays text
+- Interactable props for immersive storytelling
+- Our first complete environment to explore
