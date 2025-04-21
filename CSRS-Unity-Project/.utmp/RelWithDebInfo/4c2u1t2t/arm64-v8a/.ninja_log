@@ -1,0 +1,10 @@
+# ninja log v5
+55	1806	7664497684088137	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	2b97584a534df1f0
+0	1867	7664497684508929	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	89f4350e796305e8
+223	2047	7664497686497984	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	922246fecef9b78c
+422	2084	7664497686908886	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b9312f54ae130c27
+531	2267	7664497688761337	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	1d41ae859e4fbf98
+42	2311	7664497689163885	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	5a52ec2f4b1da07d
+547	2332	7664497689413323	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	763f769b5e27415a
+514	2454	7664497690592445	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	73d4e9aafd1ff048
+2455	2974	7664497695816906	C:/Users/UMKC-/Documents/GitHub/Crime-Scene-Reporting-Simulation/CSRS-Unity-Project/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4c2u1t2t/obj/arm64-v8a/libgame.so	5d1a9154b0903c16
