@@ -73,23 +73,27 @@ namespace XRTools
         /// </summary>
         public void ShowGameObjectByIndex(int index)
         {
+            // Return if null or zero gameObjects
             if (gameObjects == null || gameObjects.Count == 0)
             {
                 if (debug) Debug.LogWarning("No GameObjects in the list.");
                 return;
             }
 
+            // Don't iterate past the size or gameObjects
             if(loop == false && index > gameObjects.Count) 
             {
                 if (debug) Debug.LogWarning($"{gameObject.name}: Attempted to access an overflow index.");
                 return;
             }
+
+            // Don't allow access to negative indices
             if (index < 0)
             {
                 if (debug) Debug.LogWarning($"{gameObject.name}: Attempted to access a negative index.");
                 return;
             }
-
+            
             // Deactivate the old group if it's valid
             if (currentIndex >= 0 && currentIndex < gameObjects.Count)
             {
