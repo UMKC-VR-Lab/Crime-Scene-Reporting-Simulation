@@ -11520,12 +11520,40 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1109998773252881472, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109998773252881472, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109998773252881472, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109998773252881472, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 301116122}
     - target: {fileID: 1109998773252881472, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109998773252881472, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109998773252881472, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadSceneAsyncByIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109998773252881472, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SceneHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109998773252881472, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: SceneHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1329790594209347110, guid: e1b747a031c2ec04e8de644e2eadf474, type: 3}
       propertyPath: m_AnchorMax.y
