@@ -8,13 +8,16 @@ public class TeleprompterManager : MonoBehaviour
     public RectTransform contentTransform;
 
     [Header("Scroll Settings")]
-    public float scrollSpeed = 0.05f;
-    public float scrollIncrement = 0.01f;
-    public float backLinesAmount = 50f; // Adjust based on font size or line height
+    public float scrollDefaultSpeed = 100f;
+    public float scrollSpeed = 100f;
+    public float scrollIncrement = 25f;
+    public float backLinesAmount = 500f; // Adjust based on font size or line height
 
     private Vector2 startingPosition;
     private Vector2 scrollPosition;
     private bool isScrolling = false;
+    
+    //public float ypos;
 
     void Start()
     {
@@ -33,6 +36,7 @@ public class TeleprompterManager : MonoBehaviour
             scrollPosition.y += scrollSpeed * Time.deltaTime;
             contentTransform.anchoredPosition = scrollPosition;
         }
+        //ypos = scrollPosition.y;
     }
 
     public void ToggleAutoscroll()
@@ -42,6 +46,7 @@ public class TeleprompterManager : MonoBehaviour
 
     public void ResetContentPosition()
     {
+        isScrolling = false;
         scrollPosition = startingPosition;
         contentTransform.anchoredPosition = scrollPosition;
     }
@@ -56,11 +61,21 @@ public class TeleprompterManager : MonoBehaviour
         scrollSpeed = Mathf.Max(0f, scrollSpeed - scrollIncrement);
     }
 
+    public void ResetScrollSpeed()
+    {
+        scrollSpeed = scrollDefaultSpeed;
+    }
+
     public void BackALine()
     {
         isScrolling = false;
-        scrollPosition.y -= backLinesAmount;
-        contentTransform.anchoredPosition = scrollPosition;
+        if ((scrollPosition.y - backLinesAmount) > startingPosition.y) {
+            scrollPosition.y -= backLinesAmount;
+            contentTransform.anchoredPosition = scrollPosition;
+
+        } else {
+            ResetContentPosition();
+        }
     }
 
     public bool IsScrolling()

@@ -33,7 +33,10 @@ public class TeleprompterManagerEditor : Editor
             manager.DecreaseScrollSpeed();
         }
         GUILayout.EndHorizontal();
-
+        if (GUILayout.Button("Reset Scroll Speed"))
+        {
+            manager.ResetScrollSpeed();
+        }
         if (GUILayout.Button("Back a Few Lines"))
         {
             manager.BackALine();

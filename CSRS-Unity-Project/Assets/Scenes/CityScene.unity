@@ -9164,6 +9164,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 577820112}
     m_Modifications:
+    - target: {fileID: 149971384089164469, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149971384089164469, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3070609785777917546, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -9189,8 +9197,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4689173048090028499, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689173048090028499, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689173048090028499, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689173048090028499, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0009900412
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5254389790112684475, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
       propertyPath: m_Size
@@ -9214,8 +9234,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6787316416249094925, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
       propertyPath: scrollSpeed
-      value: 0.5
+      value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 6787316416249094925, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: backLinesAmount
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787316416249094925, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: scrollIncrement
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787316416249094925, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: contentTransform
+      value: 
+      objectReference: {fileID: 2091916270}
     - target: {fileID: 7849390625514125199, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
       propertyPath: m_Name
       value: Teleprompter
@@ -55529,6 +55561,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6922693863335525220, guid: a8d20d29e9e05fc48bd4e486851588fb, type: 3}
   m_PrefabInstance: {fileID: 2089036710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2091916270 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4689173048090028499, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+  m_PrefabInstance: {fileID: 319382183}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2097940838 stripped
 Transform:
