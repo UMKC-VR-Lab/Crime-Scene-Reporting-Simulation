@@ -12,7 +12,8 @@ public class TeleprompterManager : MonoBehaviour
     public float scrollSpeed = 100f;
     public float scrollIncrement = 25f;
     public float backLinesAmount = 500f; // Adjust based on font size or line height
-
+    public Text labelToggleAutoscroll;
+    public Text labelScrollSpeed;
     private Vector2 startingPosition;
     private Vector2 scrollPosition;
     private bool isScrolling = false;
@@ -42,6 +43,7 @@ public class TeleprompterManager : MonoBehaviour
     public void ToggleAutoscroll()
     {
         isScrolling = !isScrolling;
+        UpdateToggleAutoscrollText();
     }
 
     public void ResetContentPosition()
@@ -54,16 +56,19 @@ public class TeleprompterManager : MonoBehaviour
     public void IncreaseScrollSpeed()
     {
         scrollSpeed += scrollIncrement;
+        UpdateScrollSpeedText();
     }
 
     public void DecreaseScrollSpeed()
     {
         scrollSpeed = Mathf.Max(0f, scrollSpeed - scrollIncrement);
+        UpdateScrollSpeedText();
     }
 
     public void ResetScrollSpeed()
     {
         scrollSpeed = scrollDefaultSpeed;
+        UpdateScrollSpeedText();
     }
 
     public void BackALine()
@@ -79,8 +84,21 @@ public class TeleprompterManager : MonoBehaviour
     }
 
     public bool IsScrolling()
-{
-    return isScrolling;
-}
+    {
+        return isScrolling;
+    }
+
+    public void UpdateToggleAutoscrollText()
+    {
+        if (labelToggleAutoscroll != null)
+            labelToggleAutoscroll.text = isScrolling ? "Pause Autoscroll" : "Start Autoscroll";
+    }
+
+    public void UpdateScrollSpeedText()
+    {
+        float multiplier = scrollSpeed / 100f;
+        labelScrollSpeed.text = multiplier.ToString("0.00") + "x";
+    }
+
 
 }
