@@ -9184,9 +9184,21 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3886944817836012741, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689173048090028499, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0009900412
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254389790112684475, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5254389790112684475, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5254389790112684475, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -9207,6 +9219,10 @@ PrefabInstance:
     - target: {fileID: 7849390625514125199, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
       propertyPath: m_Name
       value: Teleprompter
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907392866986819275, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
+      propertyPath: m_MovementType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8808820526040220270, guid: 29be9680fcb0da44f90ec53866dcfae5, type: 3}
       propertyPath: m_LocalScale.x
