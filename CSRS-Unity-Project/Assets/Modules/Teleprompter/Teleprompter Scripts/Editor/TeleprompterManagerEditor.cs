@@ -40,13 +40,20 @@ public class TeleprompterManagerEditor : Editor
         }
         if (GUILayout.Button("Rewind"))
         {
-            manager.RewindSpecifiedLineAmount();
+            manager.RewindByIncrement();
         }
         if (GUILayout.Button("Forward"))
         {
-            manager.ForwardSpecifiedLineAmount();
+            manager.ForwardByIncrement();
         }
-
+        if (GUILayout.Button("Decrease Increment"))
+        {
+            manager.DecreaseIncrement();
+        }
+        if (GUILayout.Button("Increase Increment"))
+        {
+            manager.IncreaseIncrement();
+        }
         // Ensure changes are saved and reflected in the editor
         if (GUI.changed)
         {

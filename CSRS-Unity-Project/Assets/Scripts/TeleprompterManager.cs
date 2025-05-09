@@ -1,4 +1,5 @@
 using System;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,15 +11,18 @@ public class TeleprompterManager : MonoBehaviour
     public ScrollRect scrollRect;
     public RectTransform contentTransform;
     public Slider scrollSpeedSlider;
+    public Slider incrementAmountSlider;
+    public Text labelToggleAutoscroll;
+    public Text labelScrollSpeed;
+    public Text labelIncrementAmount;
 
     [Header("Scroll Settings")]
     public float scrollDefaultSpeed = 100f;
     public float scrollSpeed = 100f;
     public float scrollIncrement = 25f;
-    public float lineAdjustAmount; // Adjust based on font size or line height
-    public Text labelToggleAutoscroll;
-    public Text labelScrollSpeed;
+    public float incrementAmount; // How much to increment BEFORE considering lineLength variable
     private float lineLength = 172.5f; // Exact length of 1 line in the teleprompter at 150 font size (Length is 1.15x the Font Size)
+    private float lineIncrement; // How many lines are incremented based on font size or line height
     private Vector2 startingPosition;
     private Vector2 scrollPosition;
     private bool isScrolling = false;
@@ -29,10 +33,11 @@ public class TeleprompterManager : MonoBehaviour
     {
         if (scrollRect == null)
             scrollRect = GetComponent<ScrollRect>();
-        lineAdjustAmount = lineLength * 5;
+        lineIncrement = lineLength * 3;
         startingPosition = contentTransform.anchoredPosition;
         scrollPosition = startingPosition;
         scrollRect.movementType = ScrollRect.MovementType.Unrestricted;
+        //SetIncrement(5);
     }
 
     void Update()
@@ -58,12 +63,45 @@ public class TeleprompterManager : MonoBehaviour
         scrollPosition = startingPosition;
         contentTransform.anchoredPosition = scrollPosition;
     }
-    public void RewindSpecifiedLineAmount()
+
+    public void IncreaseIncrement()
+    {
+        incrementAmount += 1;
+        UpdateIncrementAmountText();
+    }
+
+    public void DecreaseIncrement()
+    {
+        incrementAmount = Mathf.Max(0f, incrementAmount - 1);
+        UpdateIncrementAmountText();
+    }
+
+    public void SetIncrement(float incrementNum)
+    {
+        incrementAmount = incrementNum > 0 ? incrementNum : 1;
+        ConvertIncrementToLines(incrementAmount);
+        UpdateIncrementAmountText();
+    }
+
+    public void SetIncrementBySlider()
+    {
+        incrementAmount = incrementAmountSlider.value;
+        ConvertIncrementToLines(incrementAmount);
+        UpdateIncrementAmountText();
+    }
+
+    public void ConvertIncrementToLines(float incrementAmount)
+    {
+        lineIncrement = lineLength * incrementAmount;
+    }
+
+    public void RewindByIncrement()
     {
         isScrolling = false;
+        ConvertIncrementToLines(incrementAmount);
         UpdateToggleAutoscrollText();
-        if ((scrollPosition.y - lineAdjustAmount) > startingPosition.y) {
-            scrollPosition.y -= lineAdjustAmount;
+        if ((scrollPosition.y - lineIncrement) > startingPosition.y) {
+            scrollPosition.y -= lineIncrement;
             contentTransform.anchoredPosition = scrollPosition;
 
         } else {
@@ -71,11 +109,12 @@ public class TeleprompterManager : MonoBehaviour
         }
     }
 
-    public void ForwardSpecifiedLineAmount()
+    public void ForwardByIncrement()
     {
         isScrolling = false;
+        ConvertIncrementToLines(incrementAmount);
         UpdateToggleAutoscrollText();
-        scrollPosition.y += lineAdjustAmount;
+        scrollPosition.y += lineIncrement;
         contentTransform.anchoredPosition = scrollPosition;
 
     }
@@ -121,5 +160,8 @@ public class TeleprompterManager : MonoBehaviour
         labelScrollSpeed.text = multiplier.ToString("0.0") + "x";
     }
 
-
+    public void UpdateIncrementAmountText()
+    {
+        labelIncrementAmount.text = incrementAmount.ToString() + (incrementAmount == 1 ? " Line" : " Lines");
+    }
 }
